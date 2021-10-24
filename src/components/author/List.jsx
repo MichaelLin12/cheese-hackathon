@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
-  UserCircleIcon,
+  CubeIcon,
   PencilAltIcon,
   TrashIcon,
 } from '@heroicons/react/outline'
@@ -15,7 +15,7 @@ function AuthorList({ data, deleteAction }) {
   if (!data || data.length == 0) {
     return (
       <EmptyState
-        icon={UserCircleIcon}
+        icon={CubeIcon}
         title="No distributers"
         message="Start by adding a new distributer"
         btnLabel="Add Distributer"
@@ -47,7 +47,7 @@ function AuthorList({ data, deleteAction }) {
       />
       <div className="mb-4">
         <Link to="/author/create" className="btn btn-secondary btn-sm">
-          <UserCircleIcon className="w-5 h-5 mr-2 -ml-1" aria-hidden="true" />
+          <CubeIcon className="w-5 h-5 mr-2 -ml-1" aria-hidden="true" />
           New Distributer
         </Link>
       </div>
