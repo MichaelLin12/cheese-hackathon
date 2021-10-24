@@ -12,7 +12,7 @@ function Navbar() {
       url: '/category',
     },
     {
-      text: 'Distributers',
+      text: 'Distributors',
       url: '/author',
     },
     {
