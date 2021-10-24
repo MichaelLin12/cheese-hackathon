@@ -4,6 +4,7 @@ import {
   CubeIcon,
   PencilAltIcon,
   TrashIcon,
+  UserCircleIcon
 } from '@heroicons/react/outline'
 
 import EmptyState from '@/components/ui/EmptyState'
