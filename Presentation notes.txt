@@ -1,0 +1,16 @@
+Goods ditribution tracker 
+
+With the financial difficulties and hardships caused by the pandemic, the goventment initiated aid programs in partnership together with local organizations and volunteers in the area. 
+
+Our Webapp tracks the state-aided distributions of food, clothes, home accessories, and other supplies   to the local community.
+
+[Present the app]
+Organizations are able to add their goods distribution schedule, location, and types of goods. 
+Users view and be notified of the goods distributions in their region.
+
+
+[Technology stack]
+[Additional feature]
+
+[purpose] 
+We wanted to create an application that has social impact. An example  ...
