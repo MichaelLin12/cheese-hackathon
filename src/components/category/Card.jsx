@@ -13,7 +13,7 @@ function CategoryCard({ category }) {
   return (
     <div>
       <Link to={`/category/edit/${category.id}`}>
-        <img src={imageLink} alt={category.name} />
+        <img src={imageLink} alt={category.name} style={{objectFit: 'cover', width: '100%', height: '100%' }}  />
       </Link>
     </div>
   )
