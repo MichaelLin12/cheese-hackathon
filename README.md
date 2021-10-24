@@ -54,6 +54,8 @@ add new goods categories. While the users will be able to view and get notificat
 - [React “Material Design” components](https://mui.com/)
 - [Integrate Firebase database with react](https://www.codementor.io/@yurio/all-you-need-is-react-firebase-4v7g9p4kf)
 
+</br>
+
 --- 
 
 ## Team: 
