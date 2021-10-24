@@ -5,10 +5,10 @@ With the financial difficulties and hardships cause by the COVID pandemic, the s
 
 *"Goods Distributions"* webapp tracks and aggregates the details of these local volunteering organizations, that distribute **governmentally-aided food, clothes, and other supplies** to the local communities. 
 
+> Our purpose is to reach as many possible people in need, so we can fight this pandemic together.
+
 Organizations are able to to add themselves to the list, and 
 add new goods categories. While the users will be able to view and get notifications over available distributions in their area.
-
-> Our purpose is to reach as many possible people in need, so we can fight this pandemic together.
 
 
 ## Project links: 
