@@ -2,14 +2,18 @@
 
 With the financial difficulties and hardships cause by the COVID pandemic, the state initiated aid programs together in partnerships with local organizations in the Madison area. 
 
+<br />
 
 *"Goods Distributions"* webapp tracks and aggregates the details of these local volunteering organizations, that distribute **governmentally-aided food, clothes, and other supplies** to the local communities. 
 
 > Our purpose is to reach as many possible people in need, so we can fight this pandemic together.
 
+<br />
+
 Organizations are able to to add themselves to the list, and 
 add new goods categories. While the users will be able to view and get notifications over available distributions in their area.
 
+<br />
 
 ## Project links: 
 - [Live app](https://cheesehackathon.web.app)
@@ -43,13 +47,14 @@ add new goods categories. While the users will be able to view and get notificat
 - Maps: Google maps API.
 - ~~Backend: Nodejs~~
 
---- 
 
 ## Resources mainly used: 
 - [Tutorial for setting up react app hosted on Firebase](https://javascript.plainenglish.io/hosting-your-react-js-and-node-js-apps-for-free-with-firebase-6dc670564aca)
 - [Tool for creating template react app](https://reactjs.org/docs/create-a-new-react-app.html)
 - [React “Material Design” components](https://mui.com/)
 - [Integrate Firebase database with react](https://www.codementor.io/@yurio/all-you-need-is-react-firebase-4v7g9p4kf)
+
+--- 
 
 ## Team: 
 - Adithya
