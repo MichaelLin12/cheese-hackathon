@@ -1,5 +1,5 @@
 import React from 'react'
-import { BookOpenIcon } from '@heroicons/react/outline'
+import { BookOpenIcon, LocationMarkerIcon } from '@heroicons/react/outline'
 
 import EmptyState from '@/components/ui/EmptyState'
 import BookCard from './Card'
@@ -8,10 +8,10 @@ function BookList({ data }) {
   if (!data || data.length == 0) {
     return (
       <EmptyState
-        icon={BookOpenIcon}
-        title="No books"
-        message="Start by adding a new book"
-        btnLabel="Add Book"
+        icon={LocationMarkerIcon}
+        title="No locations"
+        message="Start by adding a new location"
+        btnLabel="Add Location"
         link="/book/create"
       />
     )

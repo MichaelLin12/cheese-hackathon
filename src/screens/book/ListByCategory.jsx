@@ -6,7 +6,7 @@ function ScreenBookListByCategory({ match: { params } }) {
   const { authorId: categoryId } = params
   return (
     <>
-      <PageHeading title="Book List by Category" />
+      <PageHeading title="Location List by Category" />
       <BookList author={categoryId} />
     </>
   )

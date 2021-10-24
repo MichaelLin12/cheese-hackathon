@@ -26,7 +26,7 @@ function ScreenBookList() {
 
   return (
     <>
-      <PageHeading title="Book List" />
+      <PageHeading title="Locations List" />
       <div className="mt-12">
         {error && <Alert type="error" message={error.message} />}
         {isLoading && (

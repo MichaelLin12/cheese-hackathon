@@ -16,7 +16,7 @@ function Navbar() {
       url: '/author',
     },
     {
-      text: 'Books',
+      text: 'Locations',
       url: '/book',
     },
   ]

@@ -2,8 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import {
   CollectionIcon,
-  UserCircleIcon,
   BookOpenIcon,
+  CubeIcon,
+  LocationMarkerIcon
 } from '@heroicons/react/outline'
 import PageHeading from '@/components/ui/PageHeading'
 
@@ -31,14 +32,14 @@ function Home() {
       icon: CollectionIcon,
     },
     {
-      title: 'Author',
+      title: 'Distributor',
       url: '/author',
-      icon: UserCircleIcon,
+      icon: CubeIcon,
     },
     {
-      title: 'Book',
+      title: 'Location',
       url: '/book',
-      icon: BookOpenIcon,
+      icon: LocationMarkerIcon,
     },
   ]
 
@@ -54,7 +55,7 @@ function Home() {
     <>
       <PageHeading title="Home" />
       <h2 className="mt-8 text-lg font-semibold text-primary">
-        Browse books by:
+        Browse distributors by:
       </h2>
       <div className="grid max-w-screen-md grid-cols-1 gap-4 mt-8 justify-items-center md:grid-cols-3 md:justify-items-start">
         {pageCards}

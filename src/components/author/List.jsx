@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import {
-  UserCircleIcon,
+  CubeIcon,
   PencilAltIcon,
   TrashIcon,
 } from '@heroicons/react/outline'
@@ -102,6 +102,14 @@ function AuthorList({ data, deleteAction }) {
           ))}
         </tbody>
       </table>
+
+      <div className="mb-4" style={{paddingTop: '40px'}}>
+        <Link to="/author/create" className="btn btn-secondary btn-sm">
+          <CubeIcon className="w-5 h-5 mr-2 -ml-1" aria-hidden="true" />
+          New Distributor
+        </Link>
+      </div>
+
     </div>
   )
 }
