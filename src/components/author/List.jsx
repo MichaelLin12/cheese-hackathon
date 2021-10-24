@@ -55,6 +55,7 @@ function AuthorList({ data, deleteAction }) {
         <thead>
           <tr>
             <th>Name</th>
+            <th>Phone no.</th>
             <th scope="col">
               <span className="sr-only">Edit</span>
             </th>
@@ -67,6 +68,7 @@ function AuthorList({ data, deleteAction }) {
           {data.map((author, index) => (
             <tr key={index}>
               <td>{author.name}</td>
+              <td>{author.phone}</td>
               <td>
                 <Link
                   to={`/author/edit/${author.id}`}

@@ -29,8 +29,8 @@ function Navbar() {
     <nav className="navbar mb-2 shadow-lg bg-neutral text-neutral-content">
       <div className="navbar-start px-2 mx-2">
         <Link to="/" className="inline-block text-lg font-bold text-primary">
-          <span>Sitepoint </span>
-          <span className="text-base-content">Books</span>
+          <span>Goods </span>
+          <span className="text-base-content">Distribution</span>
         </Link>
       </div>
       <div className="navbar-center px-2 mx-2 hidden md:flex">
