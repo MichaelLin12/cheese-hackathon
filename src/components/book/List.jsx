@@ -65,6 +65,18 @@ function BookList({ data }) {
             lat={43.07716667945091}
             lng={-89.40107546404555}
           />
+
+
+          <LocationComponent
+            lat={43.07859148725636}
+            lng={-89.41782173769504}
+          />
+
+
+          <LocationComponent
+            lat={43.0702244913752}
+            lng={-89.41148531416644}
+          />
         </GoogleMapReact>
       </div>
 
