@@ -22,7 +22,7 @@ function BookCard({ book }) {
 
   return (
     <div>
-      <Link to={`/book/detail/${book.id}`}>
+      <Link to={`/location/detail/${book.id}`}>
         <div className="w-52">
           <img src={coverURL} alt={book.title} />
         </div>

@@ -41,25 +41,25 @@ function App() {
             <Route path="/category/create">
               <ScreenCategoryForm />
             </Route>
-            <Route exact path="/author">
+            <Route exact path="/distributor">
               <ScreenAuthorList />
             </Route>
-            <Route path="/author/edit/:id">
+            <Route path="/distributor/edit/:id">
               <ScreenAuthorForm />
             </Route>
-            <Route path="/author/create">
+            <Route path="/distributor/create">
               <ScreenAuthorForm />
             </Route>
-            <Route exact path="/book">
+            <Route exact path="/location">
               <ScreenBookList />
             </Route>
-            <Route path="/book/edit/:id">
+            <Route path="/location/edit/:id">
               <ScreenBookForm />
             </Route>
-            <Route path="/book/detail/:id">
+            <Route path="/location/detail/:id">
               <ScreenBookDetail />
             </Route>
-            <Route path="/book/create">
+            <Route path="/location/create">
               <ScreenBookForm />
             </Route>
             <Route path="/login">

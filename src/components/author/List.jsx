@@ -20,7 +20,7 @@ function AuthorList({ data, deleteAction }) {
         title="No distributors"
         message="Start by adding a new distributor"
         btnLabel="Add Distributor"
-        link="/author/create"
+        link="/distributor/create"
       />
     )
   }
@@ -51,8 +51,8 @@ function AuthorList({ data, deleteAction }) {
         <thead>
           <tr>
             <th>Name</th>
-            <th>Phone no.</th>
             <th>Category</th>
+            <th>Phone no.</th>
             <th>Date/Time</th>
             <th scope="col">
               <span className="sr-only">Edit</span>
@@ -66,12 +66,12 @@ function AuthorList({ data, deleteAction }) {
           {data.map((author, index) => (
             <tr key={index}>
               <td>{author.name}</td>
-              <td>{author.phone}</td>
               <td>{author.category}</td>
+              <td>{author.phone}</td>
               <td>{author.date} {author.start_time}-{author.end_time}</td>
               <td>
                 <Link
-                  to={`/author/edit/${author.id}`}
+                  to={`/distributor/edit/${author.id}`}
                   className="text-primary hover:text-primary-focus"
                   title={`Edit ${author.name}`}
                 >
@@ -100,7 +100,7 @@ function AuthorList({ data, deleteAction }) {
       </table>
 
       <div className="mb-4" style={{paddingTop: '40px'}}>
-        <Link to="/author/create" className="btn btn-secondary btn-sm">
+        <Link to="/distributor/create" className="btn btn-secondary btn-sm">
           <CubeIcon className="w-5 h-5 mr-2 -ml-1" aria-hidden="true" />
           New Distributor
         </Link>
