@@ -42,19 +42,6 @@ function Navbar() {
         </div>
       </div>
       <div className="navbar-end">
-        <div className="flex space-x-4">
-          <Link
-            className="btn btn-sm btn-secondary w-28 rounded-full"
-            to="/login"
-          >
-            <LoginIcon className="w-5 h-5 mr-2 -ml-1" aria-hidden="true" />
-            Login
-          </Link>
-          <Link className="btn btn-sm btn-primary w-24 rounded-full" to="/join">
-            <UserCircleIcon className="w-5 h-5 mr-2 -ml-1" aria-hidden="true" />
-            Join
-          </Link>
-        </div>
       </div>
     </nav>
   )

@@ -4,6 +4,7 @@ import {
   CubeIcon,
   PencilAltIcon,
   TrashIcon,
+  UserCircleIcon
 } from '@heroicons/react/outline'
 
 import EmptyState from '@/components/ui/EmptyState'
@@ -15,7 +16,7 @@ function AuthorList({ data, deleteAction }) {
   if (!data || data.length == 0) {
     return (
       <EmptyState
-        icon={CubeIcon}
+        icon={UserCircleIcon}
         title="No distributors"
         message="Start by adding a new distributor"
         btnLabel="Add Distributor"
@@ -45,11 +46,14 @@ function AuthorList({ data, deleteAction }) {
         deleteAction={deleteModalAction}
         cancelAction={cancelModalAction}
       />
+
       <table className="table w-full max-w-screen-lg">
         <thead>
           <tr>
             <th>Name</th>
             <th>Phone no.</th>
+            <th>Category</th>
+            <th>Date/Time</th>
             <th scope="col">
               <span className="sr-only">Edit</span>
             </th>
@@ -63,6 +67,8 @@ function AuthorList({ data, deleteAction }) {
             <tr key={index}>
               <td>{author.name}</td>
               <td>{author.phone}</td>
+              <td>{author.category}</td>
+              <td>{author.date} {author.start_time}-{author.end_time}</td>
               <td>
                 <Link
                   to={`/author/edit/${author.id}`}

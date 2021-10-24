@@ -43,7 +43,7 @@ function ScreenAuthorForm() {
   if (!id) {
     return (
       <>
-        <PageHeading title="Create Author" />
+        <PageHeading title="Create Distributor" />
         <div className="mt-12">
           {error && <Alert type="error" message={error.message} />}
           <AuthorForm submit={onSubmit} />

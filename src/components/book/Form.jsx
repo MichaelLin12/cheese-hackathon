@@ -3,7 +3,7 @@ import React from 'react'
 function BookForm() {
   return (
     <div>
-      <p>BookForm</p>
+      <p>Location Form</p>
     </div>
   )
 }
