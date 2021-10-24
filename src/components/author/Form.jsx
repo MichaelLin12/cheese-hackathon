@@ -69,11 +69,11 @@ function AuthorForm({ values, submit }) {
             placeholder="0123456789"
             autoComplete="off"
             {...register('phone')}
-            className={`input input-bordered ${errors.name && 'input-error'}`}
+            className={`input input-bordered ${errors.phone && 'input-error'}`}
           />
-          {errors.name && (
+          {errors.phone && (
             <span className="mt-1 text-xs text-error">
-              {errors.name.message}
+              {errors.phone.message}
             </span>
           )}
         </div>
@@ -85,7 +85,7 @@ function AuthorForm({ values, submit }) {
           <select name="category" 
             id="category" 
             {...register('category')}
-            className={`input input-bordered ${errors.name && 'input-error'}`}
+            className={`input input-bordered ${errors.category && 'input-error'}`}
           >
             <option value="toys">Toys</option>
             <option value="food">Food</option>
@@ -93,9 +93,9 @@ function AuthorForm({ values, submit }) {
             <option value="home supplies">Home Supplies</option>
             <option value="office supplies">Office Supplies</option>
           </select>
-          {errors.name && (
+          {errors.category && (
             <span className="mt-1 text-xs text-error">
-              {errors.name.message}
+              {errors.category.message}
             </span>
           )}
         </div>
@@ -107,11 +107,11 @@ function AuthorForm({ values, submit }) {
             type="text"
             autoComplete="off"
             {...register('address')}
-            className={`input input-bordered ${errors.name && 'input-error'}`}
+            className={`input input-bordered ${errors.address && 'input-error'}`}
           />
-          {errors.name && (
+          {errors.address && (
             <span className="mt-1 text-xs text-error">
-              {errors.name.message}
+              {errors.address.message}
             </span>
           )}
         </div>
@@ -123,11 +123,11 @@ function AuthorForm({ values, submit }) {
             type="date"
             autoComplete="off"
             {...register('date')}
-            className={`input input-bordered ${errors.name && 'input-error'}`}
+            className={`input input-bordered ${errors.date && 'input-error'}`}
           />
-          {errors.name && (
+          {errors.date && (
             <span className="mt-1 text-xs text-error">
-              {errors.name.message}
+              {errors.date.message}
             </span>
           )}
         </div>
@@ -139,11 +139,11 @@ function AuthorForm({ values, submit }) {
             type="time"
             autoComplete="off"
             {...register('start_time')}
-            className={`input input-bordered ${errors.name && 'input-error'}`}
+            className={`input input-bordered ${errors.start_time && 'input-error'}`}
           />
-          {errors.name && (
+          {errors.start_time && (
             <span className="mt-1 text-xs text-error">
-              {errors.name.message}
+              {errors.start_time.message}
             </span>
           )}
         </div>
@@ -155,11 +155,11 @@ function AuthorForm({ values, submit }) {
             type="time"
             autoComplete="off"
             {...register('end_time')}
-            className={`input input-bordered ${errors.name && 'input-error'}`}
+            className={`input input-bordered ${errors.end_time && 'input-error'}`}
           />
-          {errors.name && (
+          {errors.end_time && (
             <span className="mt-1 text-xs text-error">
-              {errors.name.message}
+              {errors.end_time.message}
             </span>
           )}
         </div>

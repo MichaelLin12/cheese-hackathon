@@ -51,8 +51,8 @@ function AuthorList({ data, deleteAction }) {
         <thead>
           <tr>
             <th>Name</th>
-            <th>Phone no.</th>
             <th>Category</th>
+            <th>Phone no.</th>
             <th>Date/Time</th>
             <th scope="col">
               <span className="sr-only">Edit</span>
@@ -66,8 +66,8 @@ function AuthorList({ data, deleteAction }) {
           {data.map((author, index) => (
             <tr key={index}>
               <td>{author.name}</td>
-              <td>{author.phone}</td>
               <td>{author.category}</td>
+              <td>{author.phone}</td>
               <td>{author.date} {author.start_time}-{author.end_time}</td>
               <td>
                 <Link
