@@ -40,12 +40,14 @@ add new goods categories. While the users will be able to view and get notificat
 
 
 ## Technology stack: 
+- Webapp architecture: Single Page App 
 - Hosting: Firebase platform
 - Database: Firestore
 - Storage: Firebase storage
-- Frontend: React
+- Frontend: React, Tailwind CSS, development cycle Vite
 - Maps: Google maps API.
 - ~~Backend: Nodejs~~
+- Deployment: using Github Actions integrated with Firebase hosting.
 
 
 ## Resources mainly used: 
