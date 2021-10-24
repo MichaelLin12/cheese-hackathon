@@ -1,9 +1,19 @@
-# SITEPOINT BOOKS App
+With COVID 19, many people lost their jobs and don't have enough money to get Food
+so we decided to create a website to advertise local food distributions for those in need
 
-Sitepoint Books App, an MVP example built with Vite + React, powered by Firebase.
 
-## Setup
 
+<<<<<<< HEAD
+
+Features of the website consist of:
+Table with list of organizations that distribute food
+the table consist of the organizations name, address, date and time of food distribution, the kind of food, and the organizations phone number
+people can click on the organizations and they can see where the organization is located on a Map
+An organization can choose to advertise themselves on the table if not already listed
+Then the organization can delist themselves once they are done distributing food
+
+Map that shows locations of food distributions
+=======
 1. Create an account at [Google Firebase](https://firebase.google.com/)
 2. Create a new project: `SitePointBooks`
 3. Create a new web app: `goods-distribution-app`
@@ -39,3 +49,4 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+>>>>>>> main
