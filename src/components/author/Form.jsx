@@ -168,7 +168,7 @@ function AuthorForm({ values, submit }) {
           <button type="submit" className="btn btn-primary btn-sm w-24">
             Save
           </button>
-          <Link to="/author" className="btn btn-outline btn-sm w-24">
+          <Link to="/distributor" className="btn btn-outline btn-sm w-24">
             Cancel
           </Link>
         </div>

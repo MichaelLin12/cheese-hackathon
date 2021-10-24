@@ -13,11 +13,11 @@ function Navbar() {
     },
     {
       text: 'Distributors',
-      url: '/author',
+      url: '/distributor',
     },
     {
       text: 'Locations',
-      url: '/book',
+      url: '/location',
     },
   ]
   const links = routes.map((route, index) => (

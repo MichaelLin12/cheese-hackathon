@@ -33,12 +33,12 @@ function Home() {
     },
     {
       title: 'Distributor',
-      url: '/author',
+      url: '/distributor',
       icon: CubeIcon,
     },
     {
       title: 'Location',
-      url: '/book',
+      url: '/location',
       icon: LocationMarkerIcon,
     },
   ]

@@ -26,7 +26,7 @@ function BookList({ data }) {
         title="No locations"
         message="Start by adding a new location"
         btnLabel="Add Location"
-        link="/book/create"
+        link="/location/create"
       />
     )
   }

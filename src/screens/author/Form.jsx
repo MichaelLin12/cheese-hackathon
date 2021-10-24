@@ -37,7 +37,7 @@ function ScreenAuthorForm() {
   }
 
   if (isSuccess) {
-    return <Redirect to="/author" />
+    return <Redirect to="/distributor" />
   }
 
   if (!id) {
