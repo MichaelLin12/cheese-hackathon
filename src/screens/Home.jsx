@@ -52,15 +52,17 @@ function Home() {
     />
   ))
   return (
-    <>
+    <div>
       <PageHeading title="Home" />
       <h2 className="mt-8 text-lg font-semibold text-primary">
-        Browse distributors by:
+        This web app tracks goods distribution details around the Madison area. Due to COVID implications on households, the state has provided funding to organizations for distributing food, clothes, and other supplies.
       </h2>
+
+      <div style={{ paddingTop: '45px' }}>Browse distributors by:</div>
       <div className="grid max-w-screen-md grid-cols-1 gap-4 mt-8 justify-items-center md:grid-cols-3 md:justify-items-start">
         {pageCards}
       </div>
-    </>
+    </div>
   )
 }
 
