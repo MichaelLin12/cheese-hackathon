@@ -52,4 +52,4 @@ export const AuthorService = new DatabaseService('distributor')
 
 export const CategoryService = new DatabaseService('categories')
 
-export const BookService = new DatabaseService('books')
+export const BookService = new DatabaseService('location')

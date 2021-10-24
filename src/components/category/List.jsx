@@ -24,14 +24,15 @@ function CategoryList({ data }) {
 
   return (
     <>
-      <div className="mb-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4 gap-y-4">
+        {cards}
+      </div>
+
+      <div className="mb-4" style={{paddingTop: '40px'}}>
         <Link to="/category/create" className="btn btn-secondary btn-sm">
           <CollectionIcon className="w-5 h-5 mr-2 -ml-1" aria-hidden="true" />
           New Category
         </Link>
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 md:gap-4 gap-y-4">
-        {cards}
       </div>
     </>
   )

@@ -16,7 +16,7 @@ function ScreenBookDetail() {
 
   return (
     <>
-      <PageHeading title="Book Detail" />
+      <PageHeading title="Location Detail" />
       {error && <Alert type="error" message={error.message} />}
       {isLoading && (
         <Alert

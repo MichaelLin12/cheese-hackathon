@@ -15,7 +15,7 @@ function CategoryCard({ category }) {
     <div>
       <span className="centered">{category.name}</span>
       <Link to={`/category/edit/${category.id}`}>
-        <img src={imageLink} alt={category.name} />
+        <img src={imageLink} alt={category.name} style={{objectFit: 'cover', width: '100%', height: '100%' }}  />
       </Link>
     </div>
   )
