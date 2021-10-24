@@ -1,5 +1,5 @@
 {
-  "name": "sitepoint-books-firebase",
+  "name": "goods-distribution-firebase",
   "description": "Firebase auth & crud app bulit with Vite + React + TailwindCSS",
   "version": "0.0.0",
   "license": "MIT",

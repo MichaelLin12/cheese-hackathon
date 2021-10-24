@@ -6,16 +6,16 @@ Sitepoint Books App, an MVP example built with Vite + React, powered by Firebase
 
 1. Create an account at [Google Firebase](https://firebase.google.com/)
 2. Create a new project: `SitePointBooks`
-3. Create a new web app: `sitepoint-books-app`
+3. Create a new web app: `goods-distribution-app`
 4. Setup a new Firestore Database
 5. Clone the project and setup dependencies as follows in a Bash terminal:
 
    ```bash
    # Clone project
-   git clone git@github.com:brandiqa/sitepoint-books-app.git
+   git clone git@github.com:brandiqa/goods-distribution-app.git
 
    # Navigate to project directory
-   cd sitepoint-books-app
+   cd goods-distribution-app
 
    # Install dependencies
    npm install
@@ -39,4 +39,3 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
