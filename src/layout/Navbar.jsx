@@ -12,11 +12,11 @@ function Navbar() {
       url: '/category',
     },
     {
-      text: 'Authors',
+      text: 'Distributers',
       url: '/author',
     },
     {
-      text: 'Books',
+      text: 'Locations',
       url: '/book',
     },
   ]

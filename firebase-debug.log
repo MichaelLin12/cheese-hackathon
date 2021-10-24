@@ -1,0 +1,86 @@
+[debug] [2021-10-24T03:55:25.212Z] ----------------------------------------------------------------------
+[debug] [2021-10-24T03:55:25.213Z] Command:       /usr/local/bin/node /home/unixuser/.yarn/bin/firebase deploy
+[debug] [2021-10-24T03:55:25.214Z] CLI Version:   9.21.0
+[debug] [2021-10-24T03:55:25.214Z] Platform:      linux
+[debug] [2021-10-24T03:55:25.214Z] Node Version:  v17.0.1
+[debug] [2021-10-24T03:55:25.214Z] Time:          Sat Oct 23 2021 22:55:25 GMT-0500 (Central Daylight Time)
+[debug] [2021-10-24T03:55:25.214Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-10-24T03:55:25.257Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-10-24T03:55:25.257Z] > authorizing via signed-in user (nassarsafi@gmail.com)
+[debug] [2021-10-24T03:55:25.257Z] [iam] checking project cheesehackathon for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-10-24T03:55:25.259Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/cheesehackathon:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-10-24T03:55:26.117Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 24 Oct 2021 03:55:24 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=36","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-24T03:55:26.119Z] > refreshing access token with scopes: []
+[debug] [2021-10-24T03:55:26.120Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-24T03:55:26.427Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sun, 24 Oct 2021 03:55:25 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-24T03:55:26.441Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cheesehackathon [none]
+[debug] [2021-10-24T03:55:26.650Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cheesehackathon 200
+[debug] [2021-10-24T03:55:26.650Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cheesehackathon {"projectId":"cheesehackathon","projectNumber":"476080843828","displayName":"CheeseHackathon","name":"projects/cheesehackathon","resources":{"hostingSite":"cheesehackathon","realtimeDatabaseInstance":"cheesehackathon-default-rtdb","storageBucket":"cheesehackathon.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'cheesehackathon'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-10-24T03:55:26.653Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-24T03:55:26.654Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-24T03:55:36.770Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 24 Oct 2021 03:55:35 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-24T03:55:36.785Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/cheesehackathon/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-10-24T03:55:37.184Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 24 Oct 2021 03:55:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[cheesehackathon]: beginning deploy... 
+[info] i  hosting[cheesehackathon]: found 6 files in ./dist 
+[debug] [2021-10-24T03:55:37.305Z] > refreshing access token with scopes: []
+[debug] [2021-10-24T03:55:37.306Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-10-24T03:55:37.308Z] [hosting] hash cache [ZGlzdA] stored for 6 files
+[debug] [2021-10-24T03:55:37.309Z] [hosting][hash queue][FINAL] {"max":113,"min":13,"avg":31.166666666666668,"active":0,"complete":6,"success":6,"errored":0,"retried":0,"total":6,"elapsed":119}
+[debug] [2021-10-24T03:55:37.894Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 24 Oct 2021 03:55:36 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-10-24T03:55:37.913Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/cheesehackathon/versions/cbbb7e080194f4c7:populateFiles [none]
+[debug] [2021-10-24T03:55:37.914Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/cheesehackathon/versions/cbbb7e080194f4c7:populateFiles {"files":{"/index.html":"5ee3c40c6442a87d5c3ff29f30fb42ecd90b86ceb11ac5509cb317105e26c35f","/logo.svg":"7e9b3478415807383ddd76654b8acba2371d830fe878469f3aa08b108a049d8f","/assets/favicon.17e50649.svg":"7e9b3478415807383ddd76654b8acba2371d830fe878469f3aa08b108a049d8f","/assets/index.eb447f09.js":"ff5cbc7045da84bb5c0a0673c0db0fa7dd10f9ce3102e93f51c0bc947ebee447","/assets/index.ec2d3699.css":"fd921a32015849e8da5d03cb2ccf747f5c38a162492aafd9fc3dd3caecc1bd45","/assets/vendor.5928e077.js":"01709ece338bc07027efb783128461ff515cff291ef6823ced96354062e10b1e"}}
+[debug] [2021-10-24T03:55:38.405Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/cheesehackathon/versions/cbbb7e080194f4c7:populateFiles 200
+[debug] [2021-10-24T03:55:38.406Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/cheesehackathon/versions/cbbb7e080194f4c7:populateFiles {"uploadRequiredHashes":["01709ece338bc07027efb783128461ff515cff291ef6823ced96354062e10b1e","5ee3c40c6442a87d5c3ff29f30fb42ecd90b86ceb11ac5509cb317105e26c35f","ff5cbc7045da84bb5c0a0673c0db0fa7dd10f9ce3102e93f51c0bc947ebee447"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/cheesehackathon/versions/cbbb7e080194f4c7/files"}
+[debug] [2021-10-24T03:55:38.407Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/cheesehackathon/versions/cbbb7e080194f4c7/files/01709ece338bc07027efb783128461ff515cff291ef6823ced96354062e10b1e [none]
+[debug] [2021-10-24T03:55:38.407Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/cheesehackathon/versions/cbbb7e080194f4c7/files/01709ece338bc07027efb783128461ff515cff291ef6823ced96354062e10b1e [stream]
+[debug] [2021-10-24T03:55:38.409Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/cheesehackathon/versions/cbbb7e080194f4c7/files/5ee3c40c6442a87d5c3ff29f30fb42ecd90b86ceb11ac5509cb317105e26c35f [none]
+[debug] [2021-10-24T03:55:38.409Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/cheesehackathon/versions/cbbb7e080194f4c7/files/5ee3c40c6442a87d5c3ff29f30fb42ecd90b86ceb11ac5509cb317105e26c35f [stream]
+[debug] [2021-10-24T03:55:38.411Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/cheesehackathon/versions/cbbb7e080194f4c7/files/ff5cbc7045da84bb5c0a0673c0db0fa7dd10f9ce3102e93f51c0bc947ebee447 [none]
+[debug] [2021-10-24T03:55:38.411Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/cheesehackathon/versions/cbbb7e080194f4c7/files/ff5cbc7045da84bb5c0a0673c0db0fa7dd10f9ce3102e93f51c0bc947ebee447 [stream]
+[debug] [2021-10-24T03:55:38.414Z] [hosting][populate queue][FINAL] {"max":1103,"min":1103,"avg":1103,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1110}
+[debug] [2021-10-24T03:55:38.414Z] [hosting] uploads queued: 3
+[debug] [2021-10-24T03:55:39.244Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/cheesehackathon/versions/cbbb7e080194f4c7/files/5ee3c40c6442a87d5c3ff29f30fb42ecd90b86ceb11ac5509cb317105e26c35f 200
+[debug] [2021-10-24T03:55:39.244Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/cheesehackathon/versions/cbbb7e080194f4c7/files/5ee3c40c6442a87d5c3ff29f30fb42ecd90b86ceb11ac5509cb317105e26c35f [stream]
+[debug] [2021-10-24T03:55:39.375Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/cheesehackathon/versions/cbbb7e080194f4c7/files/ff5cbc7045da84bb5c0a0673c0db0fa7dd10f9ce3102e93f51c0bc947ebee447 200
+[debug] [2021-10-24T03:55:39.376Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/cheesehackathon/versions/cbbb7e080194f4c7/files/ff5cbc7045da84bb5c0a0673c0db0fa7dd10f9ce3102e93f51c0bc947ebee447 [stream]
+[debug] [2021-10-24T03:55:50.602Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/cheesehackathon/versions/cbbb7e080194f4c7/files/01709ece338bc07027efb783128461ff515cff291ef6823ced96354062e10b1e 200
+[debug] [2021-10-24T03:55:50.603Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/cheesehackathon/versions/cbbb7e080194f4c7/files/01709ece338bc07027efb783128461ff515cff291ef6823ced96354062e10b1e [stream]
+[debug] [2021-10-24T03:55:50.603Z] [hosting][upload queue][FINAL] {"max":12197,"min":838,"avg":4668.333333333333,"active":0,"complete":3,"success":3,"errored":0,"retried":0,"total":3,"elapsed":12197}
+[info] ✔  hosting[cheesehackathon]: file upload complete 
+[debug] [2021-10-24T03:55:50.603Z] [hosting] deploy completed after 13418ms
+[debug] [2021-10-24T03:55:50.605Z] [
+  {
+    "config": {
+      "public": "./dist",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "cheesehackathon"
+    },
+    "site": "cheesehackathon",
+    "version": "sites/cheesehackathon/versions/cbbb7e080194f4c7"
+  }
+]
+[info] i  hosting[cheesehackathon]: finalizing version... 
+[debug] [2021-10-24T03:55:50.605Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-10-24T03:55:50.606Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
