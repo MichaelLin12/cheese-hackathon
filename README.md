@@ -1,6 +1,6 @@
 # Local Goods Distribution 
 
-With the financial difficulties and hardships cause by the COVID pandemic, the state initiated aid programs together in partnerships with local organizations in the Madison area. 
+With the financial difficulties and hardships caused by the COVID pandemic, the state initiated aid programs together in partnership with local organizations in the Madison area. 
 
 <br />
 
