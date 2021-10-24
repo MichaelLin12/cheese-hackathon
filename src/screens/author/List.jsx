@@ -26,7 +26,7 @@ function ScreenAuthorList() {
 
   return (
     <>
-      <PageHeading title="Author List" />
+      <PageHeading title="Distributor List" />
       <div className="mt-12">
         {error && <Alert type="error" message={error.message} />}
         {isLoading && (

@@ -16,9 +16,9 @@ function AuthorList({ data, deleteAction }) {
     return (
       <EmptyState
         icon={UserCircleIcon}
-        title="No authors"
-        message="Start by adding a new author"
-        btnLabel="Add Author"
+        title="No distributors"
+        message="Start by adding a new distributor"
+        btnLabel="Add Distributor"
         link="/author/create"
       />
     )
@@ -48,7 +48,7 @@ function AuthorList({ data, deleteAction }) {
       <div className="mb-4">
         <Link to="/author/create" className="btn btn-secondary btn-sm">
           <UserCircleIcon className="w-5 h-5 mr-2 -ml-1" aria-hidden="true" />
-          New Author
+          New Distributor
         </Link>
       </div>
       <table className="table w-full max-w-screen-lg">
@@ -56,6 +56,8 @@ function AuthorList({ data, deleteAction }) {
           <tr>
             <th>Name</th>
             <th>Phone no.</th>
+            <th>Category</th>
+            <th>Date/Time</th>
             <th scope="col">
               <span className="sr-only">Edit</span>
             </th>
@@ -69,6 +71,8 @@ function AuthorList({ data, deleteAction }) {
             <tr key={index}>
               <td>{author.name}</td>
               <td>{author.phone}</td>
+              <td>{author.category}</td>
+              <td>{author.date} {author.start_time}-{author.end_time}</td>
               <td>
                 <Link
                   to={`/author/edit/${author.id}`}
