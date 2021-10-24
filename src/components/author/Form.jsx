@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom'
 
 const schema = yup.object().shape({
   name: yup.string().label('Name').required().min(2),
+  phone: yup.string().label('Phone no.').required().min(2),
 })
 
 function AuthorForm({ values, submit }) {
@@ -45,6 +46,22 @@ function AuthorForm({ values, submit }) {
             type="text"
             autoComplete="off"
             {...register('name')}
+            className={`input input-bordered ${errors.name && 'input-error'}`}
+          />
+          {errors.name && (
+            <span className="mt-1 text-xs text-error">
+              {errors.name.message}
+            </span>
+          )}
+        </div>
+        <div className="form-control">
+          <label className="label" htmlFor="phone">
+            <span className="label-text">Phone no.</span>
+          </label>
+          <input
+            type="text"
+            autoComplete="off"
+            {...register('phone')}
             className={`input input-bordered ${errors.name && 'input-error'}`}
           />
           {errors.name && (
